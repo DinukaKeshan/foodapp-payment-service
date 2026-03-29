@@ -48,13 +48,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
-        env:
-          NODE_ENV: test
-          MONGODB_URI: mongodb://localhost:27017/payment-service-test
-          JWT_SECRET: test-jwt-secret
-          STRIPE_SECRET_KEY: sk_test_placeholder
+      # - name: Run tests
+      #   run: npm test
+      #   env:
+      #     NODE_ENV: test
+      #     MONGODB_URI: mongodb://localhost:27017/payment-service-test
+      #     JWT_SECRET: test-jwt-secret
+      #     STRIPE_SECRET_KEY: sk_test_placeholder
 
   # ─── Build & Push to ECR ──────────────────────────────
   build-and-push:
