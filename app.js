@@ -17,7 +17,12 @@ import invoiceRoutes from './src/routes/invoiceRoutes.js';
 const app = express();
 
 // ─── Security ──────────────────────────────────────────
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginOpenerPolicy: false,
+    contentSecurityPolicy: false,
+  })
+);
 app.use(cors());
 
 // ─── Rate Limiting ─────────────────────────────────────
