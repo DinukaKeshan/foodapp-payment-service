@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  AWS_REGION: ap-southeast-1
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: payment-service
   ECS_CLUSTER: payment-cluster
   ECS_SERVICE: payment-service
