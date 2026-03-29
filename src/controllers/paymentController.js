@@ -33,6 +33,8 @@ export const processPayment = asyncHandler(async (req, res) => {
 
   const statusCode = payment.status === 'SUCCESS' ? 201 : 202;
   return apiResponse(res, statusCode, 'Payment processed successfully', payment);
+
+
 });
 
 /**
