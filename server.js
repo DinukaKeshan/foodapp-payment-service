@@ -9,7 +9,7 @@ const startServer = async () => {
     await connectDB();
 
     // Start Express server
-    const server = app.listen(config.port, () => {
+    const server = app.listen(config.port, "0.0.0.0", () => {
       logger.info(`🚀 Payment Service running on port ${config.port}`);
       logger.info(`📄 API Docs available at http://localhost:${config.port}/api-docs`);
       logger.info(`🏥 Health check at http://localhost:${config.port}/health`);
