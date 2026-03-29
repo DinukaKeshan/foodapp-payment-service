@@ -54,7 +54,7 @@ setupSwagger(app);
 app.get('/health', (req, res) => {
   res.status(200).json({
     success: true,
-    status: 'healthy',
+    status: 'healthy - hi dinuka',
     service: 'payment-service',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
