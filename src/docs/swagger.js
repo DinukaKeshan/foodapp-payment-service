@@ -44,7 +44,7 @@ const options = {
                 paymentId: { type: 'string', example: 'PAY123ABC456DE' },
                 orderId: { type: 'string', example: 'ORD789' },
                 userId: { type: 'string', example: 'U456' },
-                amount: { type: 'number', example: 2790 },
+                amount: { type: 'number', example: 279000 },
                 currency: { type: 'string', example: 'LKR' },
                 paymentMethod: { type: 'string', example: 'CARD' },
                 cardLast4: { type: 'string', example: '1234' },
